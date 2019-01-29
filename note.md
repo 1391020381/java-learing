@@ -82,3 +82,7 @@ public class Puppy {
 
 * 方法的定义  
   ![](img/function.jpg)
+
+# Java 流(Stream)、文件(File)和 IO
+
+- java.io 包含几乎包含了所有操作输入、输出需要的类。所有的这些流类代表了输入源和输出目标。
