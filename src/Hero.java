@@ -4,3 +4,4 @@ class Hero {
     float armor ;
     int moveSpeed;
 }
+

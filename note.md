@@ -101,5 +101,8 @@ public class Puppy {
 
 # Java重写（Override） 与重载(Overload)
 
+# 多态
+* 多态是同一个行为具有多个不同的表现形式或形态的能力
+
 
  
