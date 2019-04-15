@@ -84,7 +84,7 @@ public class Puppy {
   ![](img/function.jpg)
 
 # 方法的重载
-* 一个类的两个方法拥有相同的名字,但是有不同的参数列表。
+* 一个类的两个方法拥有相同的名字,但是有不同的参数列表,返回类型可相同也可以不同。
 * java编译器根据方法名判断哪个方法应该被调用
 * 重载的方法必须拥有不同的参数列表。
 
@@ -92,3 +92,14 @@ public class Puppy {
 
 - java.io 包含几乎包含了所有操作输入、输出需要的类。所有的这些流类代表了输入源和输出目标。
 * Java Scanner类 获取用户的输入
+
+# Java异常处理
+
+# 继承
+* extends 
+* implements
+
+# Java重写（Override） 与重载(Overload)
+
+
+ 

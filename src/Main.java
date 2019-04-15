@@ -1,6 +1,4 @@
-
-
-
+import sun.plugin2.os.windows.OVERLAPPED;
 
 public class Main {
 
@@ -21,6 +19,18 @@ public class Main {
                 total += myList[i];
             }
             System.out.println("总和为："+ total);
+            Penguin penguin = new Penguin("penguin",24);
+            Mouse mouse = new Mouse("mouse",25);
+            penguin.introduction();
+            mouse.introduction();
+            penguin.move();
+            mouse.move();
+
+            Overloading overloading = new Overloading();
+            System.out.println(overloading.test());
+            overloading.test(2);
+            System.out.println(overloading.test(1,"test3"));
+            System.out.println(overloading.test("test4",1));
 
     }
 }
