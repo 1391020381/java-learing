@@ -104,5 +104,15 @@ public class Puppy {
 # 多态
 * 多态是同一个行为具有多个不同的表现形式或形态的能力
 
+# 抽象类
+* 如果一个类中没有包含足够的信息来描述一个具体的对象，这样的类就是抽象类。
+* 抽象类除了不能实例化对象外,类的其他功能依然存在,成员变量 成员方法和构造方法的访问方式和普通类一样。
 
+* 实例中,实例化了两个Salarh对象：一个使用Salary引用 s 另一个是 Employee
+* s.mailCheck时，编译时会在Salary类中找到mailCheck(),执行过程中JVM
+就调用Salary类的mailCheck();
+* e是Employee的引用,所以调用e的mailCheck()方法时，编译器会去Employee类找
+mailChecki()方法
+* 在编译的时候,编译器使用Employee类中的mailCheck方法验证该语句，但是在运行
+的时候,java虚拟机(JVM)调用的是Salary类中的mailCheck()
  
