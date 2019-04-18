@@ -1,6 +1,10 @@
 public class Item {
     String name ;
     int price ;
+    int i = 1;
+    public void method1(final int i) {
+        System.out.println(i);
+    }
     public static void main(String[] args){
         Item xp  = new Item();
         xp.name = "血瓶";
@@ -13,5 +17,6 @@ public class Item {
         cj.price = 350;
         System.out.println("xp:"+xp);
         System.out.println("cj:"+cj);
+        new Item().method1(5);
     }
 }

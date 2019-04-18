@@ -115,4 +115,7 @@ public class Puppy {
 mailChecki()方法
 * 在编译的时候,编译器使用Employee类中的mailCheck方法验证该语句，但是在运行
 的时候,java虚拟机(JVM)调用的是Salary类中的mailCheck()
+
+## 数组
+* 数组是一个类型 固定长度 的  包含了相同类型 数据的 容器
  
