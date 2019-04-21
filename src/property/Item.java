@@ -1,6 +1,6 @@
 package property;
 
-public class Item {
+public abstract  class Item {
     String name;
     int price;
     public void buy(){
@@ -9,6 +9,7 @@ public class Item {
     public void effect(){
         System.out.println("购买使用后,可以有效果");
     }
+    public abstract boolean disposable();
     public static void main(String[] args){
         Item i1 = new LifePoint();
         Item i2 = new MagicPoint();

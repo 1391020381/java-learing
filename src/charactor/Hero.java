@@ -2,11 +2,14 @@ package charactor;
 import property.Item;
 import property.LifePoint;
 import property.MagicPoint;
-public class Hero {
-    String name ;
+public  class Hero {
+  public   String name ;
     float hp;
     float armor;
     int moveSpeed;
+    private static void battleWin(){
+        System.out.println("battle win");
+    }
     float getArmor(){
         return armor;
     }
@@ -31,6 +34,27 @@ public class Hero {
     public void kil(Mortal m){
         m.die();
     }
+    class BattleScore{
+        int kill;
+        int die;
+        int assit;
+        public void legendary(){
+            if(kill >=8){
+                System.out.println(name+ "超神");
+            }else {
+                System.out.println(name+ "尚未超神");
+            }
+        }
+    }
+//    static class EnemyCrystal{
+//        int hp = 5000;
+//        public void checkIfVictory(){
+//            if(hp == 0){
+//                    Hero.battleWin();
+//                    System.out.println(name+ "win this game");
+//            }
+//        }
+//    }
     public static void main(String[] args){
         Hero garen = new Hero();
         garen.name = "盖伦";
@@ -46,7 +70,9 @@ public class Hero {
         teemo.moveSpeed = 330;
         System.out.println("garen:"+ garen);
         System.out.println("teemo:"+teemo);
-
+        BattleScore score = garen.new BattleScore();
+        score.kill = 9;
+        score.legendary();
         ADHero ad = new ADHero();
         Hero h = ad;
         AD adi = (AD) h;
