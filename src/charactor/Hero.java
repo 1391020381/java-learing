@@ -1,5 +1,7 @@
 package charactor;
-
+import property.Item;
+import property.LifePoint;
+import property.MagicPoint;
 public class Hero {
     String name ;
     float hp;
@@ -23,6 +25,12 @@ public class Hero {
     void recovery(float blood){
         hp = hp + blood;
     }
+    public void useItem(Item i){
+        i.effect();
+    }
+    public void kil(Mortal m){
+        m.die();
+    }
     public static void main(String[] args){
         Hero garen = new Hero();
         garen.name = "盖伦";
@@ -43,6 +51,11 @@ public class Hero {
         Hero h = ad;
         AD adi = (AD) h;
        // APHero ap = (APHero) adi;
+        LifePoint lp = new LifePoint();
+        MagicPoint mp = new MagicPoint();
+        garen.useItem(lp);
+        garen.useItem(mp);
+        garen.kil(ad);
     }
 
 
