@@ -196,3 +196,45 @@ mailChecki()方法
 4. 本地类
 
 ### 默认方法
+
+* this() 调用其他构造方法
+
+### 类  接口  继承 
+
+
+# 封装类
+* 所有的基本类型,都有对应的 类类型 这中类型 叫做 封装类
+* 自动封箱 
+* 自动拆箱
+* String.valueOf(i)
+* it.toString()
+* Integer.parseInt(str)
+* Math.round()
+* Math.random()
+* Math.sqrt()
+* Math.pow()
+* 字符 字符串
+
+* subString
+* split
+* trim
+* toLowerCase
+* toUpperCase
+* indexOf
+* equals
+
+### StringBuffer是可变长的字符串
+* append追加 delete 删除 insert 插入 reverse 反转
+
+### Date
+* SimpleDateFormat 日期格式化类
+* format 日期转字符串
+* parse 字符串转日期
+
+* Calendar类即日历类，常用于进行“翻日历”，比如下个月的今天是多久
+* Calendar.getInstance().setTime(new Date(0))
+* add方法，在原日期上增加年/月/日
+  set方法，直接设置年/月/日
+
+
+ 
