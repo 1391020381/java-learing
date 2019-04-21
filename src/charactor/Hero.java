@@ -1,3 +1,5 @@
+package charactor;
+
 public class Hero {
     String name ;
     float hp;
@@ -36,5 +38,12 @@ public class Hero {
         teemo.moveSpeed = 330;
         System.out.println("garen:"+ garen);
         System.out.println("teemo:"+teemo);
+
+        ADHero ad = new ADHero();
+        Hero h = ad;
+        AD adi = (AD) h;
+       // APHero ap = (APHero) adi;
     }
+
+
 }
