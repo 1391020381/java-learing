@@ -34,6 +34,13 @@ public  class Hero {
     public void kil(Mortal m){
         m.die();
     }
+    public String toString(){
+        return name;
+    }
+    public Hero (){}
+    public Hero(String name){
+        this.name = name;
+    }
     class BattleScore{
         int kill;
         int die;

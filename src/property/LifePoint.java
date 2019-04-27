@@ -3,6 +3,7 @@ package property;
 public class LifePoint extends Item{
     String name;
     int price;
+    Number lifePoint;
     public void buy(){
         System.out.println("购买");
     }
@@ -13,5 +14,8 @@ public class LifePoint extends Item{
     @Override
     public boolean disposable() {
         return true;
+    }
+    public LifePoint(Number lifePoint){
+        this.lifePoint = lifePoint;
     }
 }

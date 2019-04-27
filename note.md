@@ -235,6 +235,23 @@ mailChecki()方法
 * Calendar.getInstance().setTime(new Date(0))
 * add方法，在原日期上增加年/月/日
   set方法，直接设置年/月/日
+  
+  ## 集合
+  * 容器的容量 capacity会随着对象的增加自动增长
+  * ArrayList
+  * add
+  * contains
+  * get
+  * indexOf
+  * remove
+  * set
+  * size
+  * toArray
+  * addAll
+  * clear
+  
+  ### 泛型
+  * List<Hero> heros  = new ArrayList<Hero>();
 
 
  
