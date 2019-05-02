@@ -4,7 +4,8 @@ import property.LifePoint;
 import property.MagicPoint;
 public  class Hero {
   public   String name ;
-    float hp;
+   public float hp;
+   public float damage;
     float armor;
     int moveSpeed;
     private static void battleWin(){
@@ -28,11 +29,22 @@ public  class Hero {
     void recovery(float blood){
         hp = hp + blood;
     }
+    public  boolean isDead(){
+      if(this.hp<=0){
+          return true;
+      }
+      return false;
+    }
     public void useItem(Item i){
         i.effect();
     }
     public void kil(Mortal m){
         m.die();
+    }
+    public void attackHero(Hero hero){
+        hero.hp = hero.hp -50;
+        float temp = hero.getHp();
+        System.out.println(this.name + "正在攻击" + hero.name+","+hero.name +"的血量变成了" +temp);
     }
     public String toString(){
         return name;
@@ -84,7 +96,7 @@ public  class Hero {
         Hero h = ad;
         AD adi = (AD) h;
        // APHero ap = (APHero) adi;
-        LifePoint lp = new LifePoint();
+        LifePoint lp = new LifePoint(44);
         MagicPoint mp = new MagicPoint();
         garen.useItem(lp);
         garen.useItem(mp);

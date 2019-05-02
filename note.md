@@ -252,6 +252,19 @@ mailChecki()方法
   
   ### 泛型
   * List<Hero> heros  = new ArrayList<Hero>();
+  * ArrayList heroList<? extends Hero> 表示这是一个Hero 泛型或者其子类泛型
+  heroList的泛型可能是Hero/APHero/ADHero
+  * 可以确凿的是，从heroList取出来的对象，一定是可以转型成Hero的。
+  * ArrayList heroList<? super Hero> 表示这是一个Hero泛型或者其父类泛型
+  * heroList的泛型可能是Hero/Object
+  * ? 通配符
+  * 子类泛型 不可以 转换为父类泛型
+  
+  ## lanbda
 
+## 创建多线程的三种方式
+1. 继承线程类
+2. 实现Runnable类
+3. 匿名类
 
  
