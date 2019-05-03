@@ -6,6 +6,7 @@ public  class Hero {
   public   String name ;
    public float hp;
    public float damage;
+   public int id;
     float armor;
     int moveSpeed;
     private static void battleWin(){

@@ -305,3 +305,9 @@ mailChecki()方法
 ## JDBC
 * 访问Mysql数据库需要用到的第三方的类，这些第三方的类,都被压缩在一个叫做Jar的文件里。
 * 为了代码能够使用第三方的类,需要为项目倒入mysql专用包Jar包
+* 数据库的连接是有限资源，相关操作结束后,养成关闭数据库的好习惯，先关闭Statement 后关闭 Connection
+### 使用事务
+* 在事务中的多个操纵，要么都成功，要么都失败
+* c.setAutoCommit(false) 关闭自动提交
+* 使用 c.commit() 进行提交
+* mysql表的类型必须是 INNODB才支持事务。
