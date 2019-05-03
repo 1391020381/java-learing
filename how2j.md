@@ -27,3 +27,10 @@
 * ;也是一个完整的表达式
 
 ## 从{开始 到对应的 } 结束,即为一个块
+
+
+
+* 2019-05-02T15:07:08.390723Z 1 [Note] A temporary password is generated for root@localhost: FPrk1zpd%(tt    
+
+If you lose this password, please consult the section How to Reset the Root Password in the MySQL reference manual.
+* admin
