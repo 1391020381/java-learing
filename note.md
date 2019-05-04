@@ -390,3 +390,9 @@ mailChecki()方法
 ## Log4j
 * 与 Log4j入门 中的BasicConfigurator.configure();方式不同，采用指定配置文件
 * PropertyConfigurator.configure("e:\\project\\log4j\\src\\log4j.properties");
+
+## Tomact
+* [Mac下安装Tomcat及配置](https://www.cnblogs.com/quickcodes/p/5398882.html)
+* 下载二进制 tomcat文件
+* 在tomact的bin目录执行  ./startup.sh .shutdown.sh
+* 部署网页 把test.html 复制到 D:\tomcat\webapps\ROOT 目录下
