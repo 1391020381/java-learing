@@ -329,3 +329,60 @@ mailChecki()方法
 * 两台计算器进行连接,总有一台服务器,一台客户端。服务器和客户端之间的通信通过端口号进行。
 
 ### 使用Socket(套接字) 进行不同的程序之间的通信。
+
+## 反射机制
+### 获取类对象
+1. Class.forName(className)
+2. Hero.class
+3. new Hero().getClass()
+* 获取类对象的时候,会导致类属性被初始化
+
+### 创建对象
+* 反射机制,会先拿到Hero的类对象,然后通过类对象获取 构造器对象。
+* 再通过构造器对象创建一个对象。
+### 访问属性
+* 通过反射机制修改对象的属性
+* getField和getDeclaredField的区别 都是用于获取字段
+1. getField 只能获取 public的, 包括从 父类继承 来的字段
+2. getDeclaredField可以获取本类所有的字段,包括 private的,但是不能获取继承 来的字段
+* (注： 这里只能获取到private的字段，但并不能访问该private字段的值,除非加上setAccessible(true))
+
+* 调用方法
+* 首先增加 setter 和 getter
+
+### 反射机制的作用
+* 通常来说,需要在学习了 spring的依赖注入,反转控制后,才会对反射有更好的理解。
+### 注释
+#### 基本内部注释
+1. @Override
+* @Override 用在方法上,表示这个方法重写了 父类的方法
+* 如果父类 没有这个方法，那么就无法编译通过。
+2. @Deprecated
+* 表示这个方法已经过期,不建议开发者使用。(暗示在将来某个不确定的版本，就可能会取消掉)
+3. @SuppressWarnings  Suppress英文的意思就是抑制的意思。这个注释的用处就是忽略警告信息。
+
+* @SuppressWarnings({ "rawtypes", "unused" }) 就对这些警告进行了抑制，即忽略掉这些警告信息。
+* @SuppressWarnings 有常见的值，分别对应如下意思
+1. deprecation：使用了不赞成使用的类或方法时的警告(使用@Deprecated使得编译器产生的警告)；
+2. unchecked：执行了未检查的转换时的警告，例如当使用集合时没有用泛型 (Generics) 来指定集合保存的类型; 关闭编译器警告
+3. fallthrough：当 Switch 程序块直接通往下一种情况而没有 Break 时的警告;
+4.path：在类路径、源文件路径等中有不存在的路径时的警告;
+5.serial：当在可序列化的类上缺少 serialVersionUID 定义时的警告;
+6.finally：任何 finally 子句不能正常完成时的警告;
+7.rawtypes 泛型类型未指明
+8.unused 引用定义了，但是没有被使用
+9.all：关于以上所有情况的警告。
+
+3. SafeVarargs 
+@SafeVarargs 这是1.7 之后新加入的基本注解. 如例所示，当使用可变数量的参数的时候，而参数的类型又是泛型T的话，就会出现警告。 这个时候，就使用@SafeVarargs来去掉这个警告
+
+@SafeVarargs注解只能用在参数长度可变的方法或构造方法上，且方法必须声明为static或final，否则会出现编译错误。一个方法使用@SafeVarargs注解的前提是，开发人员必须确保这个方法的实现中对泛型类型参数的处理不会引发类型安全问题。
+
+以上解释很复杂，我也没搞明白，请忽略，往下学习。。。
+
+4. FunctionalInterface
+
+* @FunctionalInterface这是Java1.8 新增的注解，用于约定函数式接口。
+  函数式接口概念： 如果接口中只有一个抽象方法（可以包含多个默认方法或多个static方法），该接口称为函数式接口。函数式接口其存在的意义，主要是配合Lambda 表达式 来使用。
+
+* 自定义注释的 重要意思是拿到配置的 信息。再通过反射执行不同的方法。

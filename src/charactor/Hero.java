@@ -30,6 +30,12 @@ public  class Hero {
     void recovery(float blood){
         hp = hp + blood;
     }
+    public String getName(){
+        return name;
+    }
+    public void setName(String name){
+        this.name = name;
+    }
     public  boolean isDead(){
       if(this.hp<=0){
           return true;
