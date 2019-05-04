@@ -386,3 +386,7 @@ mailChecki()方法
   函数式接口概念： 如果接口中只有一个抽象方法（可以包含多个默认方法或多个static方法），该接口称为函数式接口。函数式接口其存在的意义，主要是配合Lambda 表达式 来使用。
 
 * 自定义注释的 重要意思是拿到配置的 信息。再通过反射执行不同的方法。
+
+## Log4j
+* 与 Log4j入门 中的BasicConfigurator.configure();方式不同，采用指定配置文件
+* PropertyConfigurator.configure("e:\\project\\log4j\\src\\log4j.properties");
