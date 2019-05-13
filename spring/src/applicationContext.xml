@@ -22,4 +22,7 @@
 <!--&lt;!&ndash;        <property name="category" ref="c"/>&ndash;&gt;-->
 <!--    </bean>-->
     <context:component-scan base-package="com.how2java.pojo"/>
+    <context:component-scan base-package="com.how2java.aspect"/>
+    <context:component-scan base-package="com.how2java.service"/>
+    <aop:aspectj-autoproxy/>
 </beans>
