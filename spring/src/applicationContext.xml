@@ -13,9 +13,13 @@
    http://www.springframework.org/schema/tx/spring-tx-3.0.xsd
    http://www.springframework.org/schema/context
    http://www.springframework.org/schema/context/spring-context-3.0.xsd">
-
-    <bean name="c" class="com.how2java.pojo.Category">
-        <property name="name" value="category 1" />
-    </bean>
-
+<!--    <context:annotation-config />-->
+<!--    <bean name="c" class="com.how2java.pojo.Category">-->
+<!--        <property name="name" value="category 1" />-->
+<!--    </bean>-->
+<!--    <bean name="p" class="com.how2java.pojo.Product">-->
+<!--        <property name="name" value="product1"/>-->
+<!--&lt;!&ndash;        <property name="category" ref="c"/>&ndash;&gt;-->
+<!--    </bean>-->
+    <context:component-scan base-package="com.how2java.pojo"/>
 </beans>

@@ -3,5 +3,5 @@
 .properties
 .idea
 .history
-.lib
+/src/lib
 /out/
