@@ -5,3 +5,5 @@
 .history
 .lib
 /out/
+/**/lib
+/**/out
