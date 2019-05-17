@@ -1,10 +1,7 @@
 package com.how2java.pojo;
-
-import org.springframework.stereotype.Component;
-
-@Component("c")
+ 
 public class Category {
-
+ 
     public int getId() {
         return id;
     }
@@ -18,5 +15,5 @@ public class Category {
         this.name = name;
     }
     private int id;
-    private String name ="category 1";
+    private String name;
 }
