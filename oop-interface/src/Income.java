@@ -5,5 +5,5 @@
 public interface Income {
 
 	// TODO
-
+   public double getIncome();
 }
