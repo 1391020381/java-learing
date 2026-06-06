@@ -1,0 +1,10 @@
+{
+    "java.jdt.ls.java.home": "/usr/lib/jvm/java-25-openjdk-amd64",
+    "java.configuration.runtimes": [
+        {
+            "name": "JavaSE-25",
+            "path": "/usr/lib/jvm/java-25-openjdk-amd64",
+            "default": true
+        }
+    ]
+}
